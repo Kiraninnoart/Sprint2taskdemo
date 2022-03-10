@@ -27,7 +27,7 @@ class EC2InstanceStack(Stack):
         super().__init__(scope, id, **kwargs)
 
 # VPC
-vpc = ec2.Vpc(self, "VPC",
+vpc = ec2.Vpc(self, "TheVPC",
     cidr="10.0.0.0/16",
     max_azs=1,
     nat_gateways=1,
