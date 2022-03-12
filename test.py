@@ -54,7 +54,6 @@ def test_describe_availability_zones_dryrun():
     )
 
 
-sss
 def test_boto3_zoneId_in_availability_zones():
     conn = boto3.client("ec2", "us-east-1")
     resp = conn.describe_availability_zones()
